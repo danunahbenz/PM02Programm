@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="1a0119a068794a2a9cc909e5c9b08aaa" Name="Diagram1" ZoomLevel="64">
+        <EntityTypeShape EntityType="PM02ZhuykovAModel.sysdiagrams" Width="1.5" PointX="7.75" PointY="7.5" />
+        <EntityTypeShape EntityType="PM02ZhuykovAModel.Администраторы" Width="1.5" PointX="7.75" PointY="10.5" />
+        <EntityTypeShape EntityType="PM02ZhuykovAModel.Анализаторы" Width="1.5" PointX="3" PointY="5" />
+        <EntityTypeShape EntityType="PM02ZhuykovAModel.Биоматериал" Width="1.5" PointX="9.75" PointY="7.5" />
+        <EntityTypeShape EntityType="PM02ZhuykovAModel.Бухгалтеры" Width="1.5" PointX="9.75" PointY="10.5" />
+        <EntityTypeShape EntityType="PM02ZhuykovAModel.Заказы" Width="1.5" PointX="3" PointY="0.75" />
+        <EntityTypeShape EntityType="PM02ZhuykovAModel.Лаборанты" Width="1.5" PointX="0.75" PointY="5.125" />
+        <EntityTypeShape EntityType="PM02ZhuykovAModel.ОказанныеУслуги" Width="1.5" PointX="5.25" PointY="7" />
+        <EntityTypeShape EntityType="PM02ZhuykovAModel.Пациенты" Width="1.5" PointX="0.75" PointY="9.125" />
+        <EntityTypeShape EntityType="PM02ZhuykovAModel.Пользователи" Width="1.5" PointX="8" PointY="2.625" />
+        <EntityTypeShape EntityType="PM02ZhuykovAModel.Роли" Width="1.5" PointX="5.75" PointY="3.5" />
+        <EntityTypeShape EntityType="PM02ZhuykovAModel.СтраховыеКомпании" Width="1.5" PointX="1.5" PointY="14.875" />
+        <EntityTypeShape EntityType="PM02ZhuykovAModel.Услуги" Width="1.5" PointX="3" PointY="9.25" />
+        <EntityTypeShape EntityType="PM02ZhuykovAModel.Services" Width="1.5" PointX="10.75" PointY="2.5" />
+        <AssociationConnector Association="PM02ZhuykovAModel.FK__Оказанные__ID_ан__7A672E12" />
+        <AssociationConnector Association="PM02ZhuykovAModel.FK__Заказы__ID_пацие__73BA3083" />
+        <AssociationConnector Association="PM02ZhuykovAModel.FK__Оказанные__ID_за__778AC167" />
+        <AssociationConnector Association="PM02ZhuykovAModel.FK__Оказанные__ID_ла__797309D9" />
+        <AssociationConnector Association="PM02ZhuykovAModel.FK__Оказанные__ID_ус__787EE5A0" />
+        <AssociationConnector Association="PM02ZhuykovAModel.FK__Пациенты__ID_ком__628FA481" />
+        <AssociationConnector Association="PM02ZhuykovAModel.FK_Пользователи_Роли" />
+        <AssociationConnector Association="PM02ZhuykovAModel.ЛаборантыУслуги" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

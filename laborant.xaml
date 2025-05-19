@@ -1,0 +1,22 @@
+﻿<Window x:Class="WpfApp1.laborant"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="laborant" Height="500" Width="800"
+        Loaded="Window_Loaded">
+    <Grid>
+        <TextBlock Text="Таймер сеанса:" FontSize="16" Margin="0,0,0,10"/>
+        <TextBlock x:Name="TimerDisplay" FontSize="24" Text="02:30" HorizontalAlignment="Center" Height="80" Margin="0,10,0,394"/>
+        <TextBlock x:Name="WarningMessage" Text="До окончания сеанса осталось менее 5 минут!" 
+                       Foreground="Red" FontWeight="Bold" Visibility="Collapsed" TextWrapping="Wrap"/>
+        <Image x:Name="BarcodeImage" x:FieldModifier="public" Margin="22,230,78,142" />
+        <TextBox x:Name="txt_barcode" x:FieldModifier="public" HorizontalAlignment="Left" Margin="187,189,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="144" Height="27"/>
+        <Button x:Name="btn_barcodeGenerate" x:FieldModifier="public" Content="Сгенерировать штрихкод" HorizontalAlignment="Left" Margin="187,157,0,0" VerticalAlignment="Top" Click="btn_barcodeGenerate_Click" Height="27"/>
+        <Button x:Name="btn_biomaterial" Content="Принять биоматериал" HorizontalAlignment="Left" Margin="24,157,0,0" VerticalAlignment="Top" Click="btn_biomaterial_Click" Height="27" Width="144"/>
+        <Image x:Name="img_Photo" HorizontalAlignment="Left" Height="100" Margin="24,27,0,0" VerticalAlignment="Top" Width="100"/>
+        <Button x:Name="btn_patientAdd" Content="Добавить пациента" HorizontalAlignment="Left" Margin="350,157,0,0" VerticalAlignment="Top" Width="144" Height="27" Click="btn_patientAdd_Click"/>
+    </Grid>
+</Window>

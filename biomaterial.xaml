@@ -1,0 +1,21 @@
+﻿<Window x:Class="WpfApp1.biomaterial"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="biomaterial" Height="450" Width="800">
+    <Grid>
+        <TextBox x:Name="txt_barCode" HorizontalAlignment="Left" Margin="96,53,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txt_patientID" HorizontalAlignment="Left" Margin="96,105,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="120"/>
+        <DatePicker x:Name="dpic_receptionDate" HorizontalAlignment="Left" Margin="96,76,0,0" VerticalAlignment="Top"/>
+        <Label Content="Штрих-код" HorizontalAlignment="Left" Margin="0,46,0,0" VerticalAlignment="Top"/>
+        <Label Content="Дата принятия" HorizontalAlignment="Left" Margin="0,75,0,0" VerticalAlignment="Top"/>
+        <Label Content="ID пациента" HorizontalAlignment="Left" Margin="0,102,0,0" VerticalAlignment="Top"/>
+        <Button Content="Провести" HorizontalAlignment="Left" Margin="10,133,0,0" VerticalAlignment="Top" Width="206" Click="Button_Click"/>
+        <DataGrid x:Name="dataGrid" AutoGenerateColumns="True" Margin="256,46,26,262"/>
+        <Button x:Name="btn_Nazad" Content="Вернуться назад" HorizontalAlignment="Left" Margin="10,158,0,0" VerticalAlignment="Top" Width="206" Click="btn_Nazad_Click"/>
+
+    </Grid>
+</Window>
